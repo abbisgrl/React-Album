@@ -30,11 +30,23 @@ function Album() {
   }
 
   function updateUser(id) {
-    alert(id);
+    fetch(`https://jsonplaceholder.typicode.com/users/1/albums/${id}`, {
+      method: 'PUT',
+      body: JSON.stringify({
+        id: 1,
+        title: 'foo',
+        userId: 1,
+      }),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
+    })
+      .then((response) => response.json())
+      .then((json) => console.log(json));
   }
   return (
     <div className="Album">
-      {console.log(data)}
+
       {data.map((item) => (
         <Card style={{ width: '18rem', marginLeft: '10px', marginTop: '10px' }}>
           <Card.Body>
@@ -45,7 +57,7 @@ function Album() {
             </Card.Text>
             <Card.Link ><Button variant="danger" onClick={() => deleteUser(item.id)}>DELETE</Button>{' '}</Card.Link>
             <Card.Link ><Button variant="secondary" onClick={(
-              
+
             ) => updateUser(item.id)}>UPDATE</Button>{' '}</Card.Link>
           </Card.Body>
         </Card>

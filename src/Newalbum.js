@@ -21,9 +21,8 @@ function Newalbum() {
         })
             .then((response) => response.json())
             .then((json) => console.log(json));
-        
-    }
 
+    }
 
     return (
         <div className="Album">

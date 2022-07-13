@@ -1,7 +1,7 @@
-.Album{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:baseline;
-    /* padding: 2%; */
+.Album {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: baseline;
+  /* padding: 2%; */
 }

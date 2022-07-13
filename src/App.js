@@ -9,9 +9,9 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path='/album' element={<Album/>} />
-        <Route path='/newalbum' element={<Newalbum/>} />
+        <Route path='/' element={<Home />} />
+        <Route path='/album' element={<Album />} />
+        <Route path='/newalbum' element={<Newalbum />} />
       </Routes>
     </div>
   );
