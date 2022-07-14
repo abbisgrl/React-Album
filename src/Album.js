@@ -10,7 +10,7 @@ function Album() {
   }, []);
 
   function getList() {
-    fetch("https://jsonplaceholder.typicode.com/users/1/albums").then(
+    fetch("https://jsonplaceholder.typicode.com/albums").then(
       (result) => {
         result.json().then((resp) => {
           setData(resp);
