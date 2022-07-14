@@ -11,7 +11,7 @@ function Newalbum() {
     function saveUser(e) {
         e.preventDefault();
         let data = { Id, userId, title };
-        fetch('https://jsonplaceholder.typicode.com/users/1/albums', {
+        fetch('https://jsonplaceholder.typicode.com/albums', {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {

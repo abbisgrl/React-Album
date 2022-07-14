@@ -18,8 +18,9 @@ function Album() {
       }
     );
   }
+  
   function deleteUser(id) {
-    fetch(`https://jsonplaceholder.typicode.com/users/1/albums/${id}`, {
+    fetch(`https://jsonplaceholder.typicode.com/albums/${id}`, {
       method: 'DELETE'
     }).then((result) => {
       result.json().then((resp) => {
@@ -30,7 +31,7 @@ function Album() {
   }
 
   function updateUser(id) {
-    fetch(`https://jsonplaceholder.typicode.com/users/1/albums/${id}`, {
+    fetch(`https://jsonplaceholder.typicode.com/albums/${id}`, {
       method: 'PUT',
       body: JSON.stringify({
         id: 1,
